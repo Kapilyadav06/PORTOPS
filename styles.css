@@ -1,0 +1,110 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+#hero {
+  background: linear-gradient(rgba(0, 123, 255, 0.8), rgba(0, 123, 255, 0.8)), url('header-background.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 100px 0;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.1);
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #3498db;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.timeline>li {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.timeline-badge {
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  background-color: #3498db;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  z-index: 100;
+  left: 50%;
+}
+
+.timeline-badge i {
+  color: #fff;
+  line-height: 40px;
+  font-size: 1.4em;
+}
+
+.timeline-panel {
+  position: relative;
+  width: 45%;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  clear: both;
+  text-align: left;
+}
+
+.timeline-inverted .timeline-panel {
+  float: right;
+}
+
+.timeline-title {
+  margin: 0 0 10px;
+}
+
+.skill-item {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.skill-item i {
+  font-size: 2em;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  color: #3498db;
+}
+
+footer {
+  background: #343a40;
+  color: #fff;
+}
+
+.btn-outline-light {
+  margin: 5px;
+}
+
+.list-group-item {
+  background: #fff;
+  border: 1px solid #ddd;
+}
